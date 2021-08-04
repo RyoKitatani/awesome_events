@@ -36,11 +36,11 @@ class EventsTest < ApplicationSystemTestCase
     select start_at.strftime("%M"), from: "#{start_at_field}_5i"
 
     end_at_field = "event_end_at"
-    select end_at.strftime("%Y"), from: "#{end_at_filed}_1i"
+    select end_at.strftime("%Y"), from: "#{end_at_field}_1i"
     select I18n.l(end_at,format:'%B'), from:"#{end_at_field}_2i"
-    select end_at.strftime("%-d"), from: "#{end_at_filed}_1i"
-    select end_at.strftime("%H"), from: "#{end_at_filed}_1i"
-    select end_at.strftime("%M"), from: "#{end_at_filed}_1i"
+    select end_at.strftime("%-d"), from: "#{end_at_field}_3i"
+    select end_at.strftime("%H"), from: "#{end_at_field}_4i"
+    select end_at.strftime("%M"), from: "#{end_at_field}_5i"
 
     click_on "登録する" 
     assert_selector "div.alert", text:"作成しました"

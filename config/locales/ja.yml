@@ -4,7 +4,7 @@ ja:
       event: イベント
       ticket: チケット
     attributes:
-      events:
+      event:
         name: 名前
         place: 場所
         start_at: 開始時間
