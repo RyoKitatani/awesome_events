@@ -8,12 +8,23 @@ module SignHelper
         nickname: user.name,
         image: user.image_url
       })
+    case
+    when respond_to?(:visit)
       visit root_url
       click_on "GitHubでログイン"
-      @current_user = user
+    when respond_to?(:get)
+      get "/auth/github/callback"
+    else
+      raise NotImplementedError.new
+    end
+    @current_user = user
   end
 
   def current_user
     @current_user
   end
+end
+
+class ActionDispatch::IntergrationTest
+  include SignInHelper
 end
