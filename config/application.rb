@@ -31,6 +31,10 @@ module AwesomeEvents
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    config.action_dispatch.rescue_responses.merge!(
+      "YourNewException" => :not_found
+    )
+
     config.time_zone = "Tokyo"
     config.i18n.default_locale = :ja
     config.active_storage.variant_processor = :vips
