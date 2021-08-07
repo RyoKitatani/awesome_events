@@ -11,4 +11,5 @@ Rails.application.routes.draw do
 
   get "/status" => "status#index", default: {format: 'json'}
   match "*path" => "application#error404", via: :all
+
 end
