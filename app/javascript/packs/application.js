@@ -8,10 +8,11 @@ import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import Bootstarp from "bootstrap"
 import Bootstarp_scss from "bootstrap/scss/bootstrap.scss"
-
+import GetFormTubolinks from "../get_form_turbolinks"
 
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
 Bootstarp.start()
 Bootstarp_scss.start()
+GetFormTubolinks.start()

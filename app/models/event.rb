@@ -3,6 +3,8 @@ class Event < ApplicationRecord
   has_many :tickets, dependent: :destroy
   belongs_to :owner, class_name: "User"
 
+  searchkick language: "japanese"
+
   attr_accessor :remove_image
   before_save :remove_image_if_user_accept
 
@@ -34,7 +36,17 @@ class Event < ApplicationRecord
   end
 
   def remove_image_if_user_accept
-  self.image = nil if ActiveRecord::Type::Boolean.new.cast(remove_image)
+    self.image = nil if ActiveRecord::Type::Boolean.new.cast(remove_image)
+  end
+
+   def serach_data
+    {
+      name: name,
+      place:place,
+      content: content,
+      owner_name: owner&.name,
+      start_at: start_at
+    }
   end
 
 end
