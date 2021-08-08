@@ -1,0 +1,33 @@
+current directory: /Users/ryo____29/Desktop/PerfectRails/awesome_events/vendor/bundle/ruby/2.6.0/gems/skylight-5.1.1/ext
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /Library/Ruby/Site/2.6.0 -r ./siteconf20210808-4478-1jd7gpn.rb extconf.rb
+I, [2021-08-08T10:54:43.251817 #4510]  INFO -- : SKYLIGHT_HDR_PATH=/Users/ryo____29/Desktop/PerfectRails/awesome_events/vendor/bundle/ruby/2.6.0/gems/skylight-5.1.1/ext; SKYLIGHT_LIB_PATH=/Users/ryo____29/Desktop/PerfectRails/awesome_events/vendor/bundle/ruby/2.6.0/gems/skylight-5.1.1/lib/skylight/native/x86_64-darwin
+I, [2021-08-08T10:54:43.252943 #4510]  INFO -- : [SKYLIGHT] fetching native ext; curr-platform=x86_64-darwin; requested-arch=x86_64-darwin; version=5.1.0-0d59831
+I, [2021-08-08T10:54:43.253135 #4510]  INFO -- : [SKYLIGHT] attempting to fetch from remote; uri=https://s3.amazonaws.com/skylight-agent-packages/skylight-native/5.1.0-0d59831/skylight_x86_64-darwin.tar.gz
+I, [2021-08-08T10:54:45.629525 #4510]  INFO -- : [SKYLIGHT] successfully downloaded native ext; out=/Users/ryo____29/Desktop/PerfectRails/awesome_events/vendor/bundle/ruby/2.6.0/gems/skylight-5.1.1/ext/skylight_x86_64-darwin.tar.gz
+I, [2021-08-08T10:54:45.685351 #4510]  INFO -- : [SKYLIGHT] tar xzvf /Users/ryo____29/Desktop/PerfectRails/awesome_events/vendor/bundle/ruby/2.6.0/gems/skylight-5.1.1/ext/skylight_x86_64-darwin.tar.gz
+I, [2021-08-08T10:54:45.685578 #4510]  INFO -- : [SKYLIGHT] x skylightd
+x libskylight.dylib
+x skylight.h
+x skylight_dlopen.h
+x skylight_dlopen.c
+
+checking for skylight_dlopen.h in /Users/ryo____29/Desktop/PerfectRails/awesome_events/vendor/bundle/ruby/2.6.0/gems/skylight-5.1.1/ext... yes
+checking for dlfcn.h... yes
+checking for rb_thread_call_without_gvl() in ruby/thread.h... yes
+checking for fast thread local storage... yes
+creating Makefile
+
+current directory: /Users/ryo____29/Desktop/PerfectRails/awesome_events/vendor/bundle/ruby/2.6.0/gems/skylight-5.1.1/ext
+make DESTDIR\= clean
+
+current directory: /Users/ryo____29/Desktop/PerfectRails/awesome_events/vendor/bundle/ruby/2.6.0/gems/skylight-5.1.1/ext
+make DESTDIR\=
+compiling skylight_memprof.c
+compiling skylight_dlopen.c
+compiling skylight_native.c
+linking shared-object skylight_native.bundle
+ld: warning: directory not found for option '-L/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.5.Internal.sdk/usr/local/lib'
+
+current directory: /Users/ryo____29/Desktop/PerfectRails/awesome_events/vendor/bundle/ruby/2.6.0/gems/skylight-5.1.1/ext
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 skylight_native.bundle ./.gem.20210808-4478-z3hdyo

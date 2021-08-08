@@ -1,0 +1,11 @@
+I, [2021-08-08T10:54:43.251817 #4510]  INFO -- : SKYLIGHT_HDR_PATH=/Users/ryo____29/Desktop/PerfectRails/awesome_events/vendor/bundle/ruby/2.6.0/gems/skylight-5.1.1/ext; SKYLIGHT_LIB_PATH=/Users/ryo____29/Desktop/PerfectRails/awesome_events/vendor/bundle/ruby/2.6.0/gems/skylight-5.1.1/lib/skylight/native/x86_64-darwin
+I, [2021-08-08T10:54:43.252943 #4510]  INFO -- : [SKYLIGHT] fetching native ext; curr-platform=x86_64-darwin; requested-arch=x86_64-darwin; version=5.1.0-0d59831
+I, [2021-08-08T10:54:43.253135 #4510]  INFO -- : [SKYLIGHT] attempting to fetch from remote; uri=https://s3.amazonaws.com/skylight-agent-packages/skylight-native/5.1.0-0d59831/skylight_x86_64-darwin.tar.gz
+I, [2021-08-08T10:54:45.629525 #4510]  INFO -- : [SKYLIGHT] successfully downloaded native ext; out=/Users/ryo____29/Desktop/PerfectRails/awesome_events/vendor/bundle/ruby/2.6.0/gems/skylight-5.1.1/ext/skylight_x86_64-darwin.tar.gz
+I, [2021-08-08T10:54:45.685351 #4510]  INFO -- : [SKYLIGHT] tar xzvf /Users/ryo____29/Desktop/PerfectRails/awesome_events/vendor/bundle/ruby/2.6.0/gems/skylight-5.1.1/ext/skylight_x86_64-darwin.tar.gz
+I, [2021-08-08T10:54:45.685578 #4510]  INFO -- : [SKYLIGHT] x skylightd
+x libskylight.dylib
+x skylight.h
+x skylight_dlopen.h
+x skylight_dlopen.c
+
