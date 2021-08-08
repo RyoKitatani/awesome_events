@@ -46,6 +46,7 @@ group :development do
   gem 'rubocop', require: false
   gem 'rubocop-performance', require: false
   gem 'rubocop-rails', require: false
+  gem 'brakeman'
 end
 
 group :test do
@@ -66,3 +67,5 @@ gem 'omniauth-rails_csrf_protection', '~> 0.1.2'
 gem 'rails-i18n', '~> 6.0.0'
 gem 'kaminari', '~> 1.2.0'
 gem 'searchkick', '~> 4.3.0'
+gem 'simplecov', require: false, group: :test
+gem 'coveralls', require: false, group: :test
